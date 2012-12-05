@@ -1,3 +1,15 @@
+/* These selection declarations have to be separate.
+   No text-shadow: twitter.com/miketaylr/status/12228805301 */
+::-moz-selection {
+  background: #c23365;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #c23365;
+  color: #fff;
+  text-shadow: none;
+}
 body,
 html {
   height: 100%;

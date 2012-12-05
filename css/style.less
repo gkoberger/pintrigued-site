@@ -1,5 +1,12 @@
 @import 'lib';
 
+@pink: #c23365;
+
+/* These selection declarations have to be separate.
+   No text-shadow: twitter.com/miketaylr/status/12228805301 */
+::-moz-selection{ background: @pink; color:#fff; text-shadow: none; }
+::selection { background: @pink; color:#fff; text-shadow: none; }
+
 body, html {
     height: 100%;
 }
@@ -67,10 +74,10 @@ body {
         color: #444;
         text-shadow: 1px 1px fade(#fff, 50%);
         a {
-            color: #c23365;
+            color: @pink;
             text-decoration: none;
             &:hover {
-                color: darken(#c23365, 20%);
+                color: darken(@pink, 20%);
             }
         }
     }
